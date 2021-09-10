@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online food delievery website-D</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600&display=swap" rel="stylesheet">
+<style>
+    *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    
+    align-items: center;
+    position: relative;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.navbar__brand{
+    width:100px;
+    margin:2px 45px;
+
+}
+.navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity: 0.4;
+}
+.brand__logo{
+    width:100%;
+}
+.navbar__nav__items{
+    display: flex;
+}
+.nav__items{
+    list-style: none;
+
+}
+.nav__items a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding:3px 22px;
+    border-radius: 20px;
+    color:white;
+}
+.nav__items a:hover{
+    background:blanchedalmond;
+    color:black;
+}
+
+.hero__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:3px 200px;
+    height:400px;
+
+}
+.hero__container::before{
+    content:"";
+    background: url("https://weneedfun.com/wp-content/uploads/2015/10/Beautiful-Food-Photos-21-1024x768.jpg")no-repeat center center/cover;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity: 0.4;
+    position: absolute;
+    top:0px;
+    
+    height:80%;
+    width:100%;
+    z-index:-1;
+    opacity: 0.8;
+
+}
+.hero__title{
+    font-size: 2.8rem;
+    padding:12px;
+    text-align: center;
+}
+.hero__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: 'Baloo Thambi 2', cursive;
+    
+}
+.hero__description p{
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+.button__primary{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color: red;
+    margin:17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color:white;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+.h__secondary{
+    font-size:2.3rem;
+    padding:12px;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+.food__menu__card__lists{
+    margin:34px;
+    display: flex;
+    
+}
+.food__menu__card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+    border:2px solid red;
+    margin:3px 6px;
+    border-radius: 23px;
+    background-color: #f2f2f2;
+    
+}
+.food__menu__card__description{
+    margin:12px;
+    text-align: center;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+.food__image{
+    width:160px;
+    margin-top:7px;
+}
+.client__container{
+    height:324px;
+    position:relative;
+}
+.client__container::before{
+    content:"";
+    background:url("https://wallpapertag.com/wallpaper/full/9/d/f/317143-new-food-background-2880x1800.jpg")no-repeat center center/cover;
+    position:absolute;
+    top:0px;
+    z-index:-1;
+    width:100%;
+    height:100%;
+    opacity: 0.5;
+}
+.client__items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client__logo{
+    width:120px;
+    margin:0px 20px;
+}
+.clients__form{
+    height:444px;
+    position: relative;
+    border:1px solid grey;
+}
+.clients__form::before{
+    content:"";
+    background:url("https://www.abcmoney.co.uk/wp-content/uploads/2018/03/modern-office.jpg")no-repeat center center/cover;
+    position:absolute;
+    top:0px;
+    z-index:-1;
+    width:100%;
+    height:100%;
+    opacity: 0.5;
+
+}
+.clients__form__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    width:40%;
+    margin:30px auto;
+
+    
+
+}
+.clients__form__container input{
+    display:block;
+    padding:12px;
+    width:100%;
+    margin:10px;
+    border-radius: 12px;
+    border:none;
+}
+.clients__form__container textarea{
+    width:100%;
+    border-radius: 12px;
+    border:none;
+}
+.button__secondary{
+    padding:8px;
+    display: block;
+    width:100%;
+    background-color:rgb(206, 199, 199);
+    border-radius:6px;
+    margin-top:10px;
+    border:1px solid white;
+    color:indianred;
+    font-size: 1.5rem;
+    font-family: "Baloo bhai 2",cursive;
+}
+.button__secondary:hover{
+    background-color: lightcoral;
+    color:mediumblue;
+}
+@media(max-width:1170px){
+    .navbar{
+        flex-direction: column;
+    }
+    .nav__items a{
+        font-size: 1rem;
+    }
+    .hero__container{
+        padding:5px 10px;
+        
+        
+    }
+    .hero__container::before{
+        height:550px;
+    }
+    
+    
+    .hero__title{
+        font-size: 1.8rem;
+    }
+    .hero__description p{
+        font-size:1rem;
+    }
+    .services__container{
+        margin-top:30px;
+    }
+    .food__menu__card__lists{
+        flex-direction: column;
+        margin:10px 10px;
+    }
+    .client__container{
+        overflow: hidden;
+    }
+}
+</style>
+   
+</head>
+<body>
+    
+    
+    <header>
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <img src="https://www.pngpix.com/wp-content/uploads/2016/07/PNGPIX-COM-Whole-Foods-Market-Logo-PNG-Transparent.png " class="brand__logo">
+                </div>
+            <ul class="navbar__nav__items">
+                <li class="nav__items"><a href="#">home</a></li>
+                <li class="nav__items"><a href="#">services</a></li>
+                <li class="nav__items"><a href="#">about </a></li>
+                <li class="nav__items"><a href="#">contact </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="hero__container">
+            <div class="hero__description">
+            
+                <h1 class="hero__title">
+                    welcome to myonline meal
+                </h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab sequi molestias nulla provident porro recusandae enim, impedit in consequuntur? Placeat cumque consequatur praesentium molestias ea accusantium! Nam impedit amet sit repudiandae, molestias quae.</p>
+                </div>
+            
+            <button class="button__primary">order Now</button>
+        </section>
+        <section class="services__container">
+            <h1 class="hero__title">our services</h1>
+            <div class="food__menu__card__lists">
+                <div class="food__menu__card">
+                
+                <img src="https://www.pngall.com/wp-content/uploads/2016/05/Pizza-Free-PNG-Image.png" class="food__image">
+                <div class="food__menu__card__description">
+                
+                <h2 class="h__secondary center">Food Ordering</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, aperiam nihil! Ea veritatis quod eveniet nam impedit, veniam, culpa porro optio non ipsa aut quo repudiandae, ex asperiores nobis mollitia temporibus commodi a placeat.</p>
+                </div>
+                </div>
+                <div class="food__menu__card">
+                
+                    <img src="https://www.pngall.com/wp-content/uploads/2016/05/Pizza-Free-PNG-Image.png" class="food__image">
+                    <div class="food__menu__card__description">
+                    
+                    <h2 class="h__secondary center">Food Ordering</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, aperiam nihil! Ea veritatis quod eveniet nam impedit, veniam, culpa porro optio non ipsa aut quo repudiandae, ex asperiores nobis mollitia temporibus commodi a placeat.</p>
+                    </div>
+                    </div>
+                    <div class="food__menu__card">
+                
+                        <img src="https://www.pngall.com/wp-content/uploads/2016/05/Pizza-Free-PNG-Image.png" class="food__image">
+                        <div class="food__menu__card__description">
+                        
+                        <h2 class="h__secondary center">Food Ordering</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, aperiam nihil! Ea veritatis quod eveniet nam impedit, veniam, culpa porro optio non ipsa aut quo repudiandae, ex asperiores nobis mollitia temporibus commodi a placeat.</p>
+                        </div>
+                        </div>
+                
+                
+            </div>
+        </section>
+        <section class="client__container">
+            <h1 class="hero__title center">Our Clients</h1>
+            
+                <div class="client__items">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Apple_Logo.svg/1200px-Apple_Logo.svg.png" class="client__logo">
+                   <img src="https://www.mdgllc.net/wp-content/uploads/2018/11/noodles-and-company-logo-png-transparent.png" class="client__logo">
+                   <img src="https://www.carlogos.org/logo/Tata-Group-logo-3840x2160.png" class="client__logo">
+                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Apple_Logo.svg/1200px-Apple_Logo.svg.png" class="client__logo">
+
+
+                
+            </div>
+        </section>
+        <section class="clients__form">
+            <div class="clients__form__container">
+                
+                    <input type="text" placeholder=" Enter Your Name">
+                    <input type="text" placeholder="Enter Your order">
+                    <input type="number" placeholder="Enter Your Number">
+                    
+                    <textarea rows="8" cols="40"placeholder="type your extra instruction"></textarea>
+                    <button class="button__secondary">Submit</button>
+                
+            </div>
+        </section> 
+    </main>
+
+    
+</body>
+</html>
